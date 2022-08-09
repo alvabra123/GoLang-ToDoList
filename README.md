@@ -57,4 +57,4 @@ go run main.go
 http://localhost:8080
 ```
 10. Result
-![alt text](http://url/to/img.png](https://github.com/alvabra123/GoLang-ToDoList/blob/main/ToDoList/assets/result.png)
+![alt text](https://github.com/alvabra123/GoLang-ToDoList/blob/main/ToDoList/assets/result.png)
