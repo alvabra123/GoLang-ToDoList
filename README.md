@@ -48,3 +48,13 @@ func dbConn() (db *sql.DB) {
   return db
 }
 ```
+8. Run main.go
+```
+go run main.go
+```
+9. Open Browser and Type URL
+```
+http://localhost:8080
+```
+10. Result
+![alt text](http://url/to/img.png)
