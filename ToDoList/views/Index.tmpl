@@ -1,0 +1,37 @@
+{{define "Index"}}
+{{template "Header"}}
+{{template "Menu"}}
+<table border="1">
+  <thead>
+    <tr>
+      <td><b>ID</b></td>
+      <td><b>Assignee</b></td>
+      <td><b>Assigner</b></td>
+      <td><b>Task</b></td>
+      <td><b>Start</b></td>
+      <td><b>Finish</b></td>
+      <td><b>Status</b></td>
+      <td><b>View</b></td>
+      <td><b>Edit</b></td>
+      <td><b>Delete</b></td>
+    </tr>
+  </thead>
+  <tbody>
+{{range .}}
+    <tr>
+      <td>{{.ID}}</td>
+      <td>{{.Assignee}}</td>
+      <td>{{.Assigner}}</td>
+      <td>{{.Task}}</td>
+      <td>{{.Start}}</td>
+      <td>{{.Finish}}</td>
+      <td>{{.Status}}</td>
+      <td><a href="/show?id={{.ID}}">View</a></td>
+      <td><a href="/edit?id={{.ID}}">Edit</a></td>
+      <td><a href="/delete?id={{.ID}}">Delete</a></td>
+    </tr>
+{{end}}
+  </tbody>
+</table>
+{{template "Footer"}}
+{{end}}
