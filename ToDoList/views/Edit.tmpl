@@ -1,0 +1,18 @@
+{{define "Edit"}}
+{{template "Header"}}
+{{template "Menu"}}
+<h2 style="text-align:center;">Edit ToDo List</h2>
+<div style="border-radius: 5px;background-color: #f2f2f2;padding: 20px;">
+<form method="POST" action="update">
+<input type="hidden" name="uid" value="{{.ID}}"/>
+<label><b>Assignee : </b></label><input type="text" name="assignee" placeholder="Assignee" value="{{.Assignee}}" required style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"/><br/><br/>
+<label><b>Assigner : </b></label><input type="text" name="assigner" placeholder="Assigner" value="{{.Assigner}}" required style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"/><br/><br/>
+<label><b>Task : </b></label><br/><textarea name="task" rows="10" placeholder="Task" required style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;">{{.Task}}</textarea><br/><br/>
+<label><b>Start : </b></label><input type="text" name="start" placeholder="Start" value="{{.Start}}" required style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"/><br/><br/>
+<label><b>Finish : </b></label><input type="text" name="finish" placeholder="Finish" value="{{.Finish}}" required style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"/><br/><br/>
+<label><b>Status : </b></label><input type="text" name="status" placeholder="Status" value="{{.Status}}" required style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"/><br/><br/>
+<input type="submit" value="Edit" style="width: 100%;background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;border-radius: 4px;cursor: pointer;"/>
+</form>
+</div>
+{{template "Footer"}}
+{{end}}
