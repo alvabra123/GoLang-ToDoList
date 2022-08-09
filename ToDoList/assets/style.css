@@ -1,0 +1,33 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: grey;
+}
+
+thead,td {
+  text-align: center;
+  padding: 16px;
+  word-wrap: break-word;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+tr:nth-child(even) {
+  background-color: #C2C2C2;
+}
+
+.menu {
+  text-align: center;
+}
