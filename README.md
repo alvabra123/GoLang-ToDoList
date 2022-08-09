@@ -1,19 +1,19 @@
 # GoLang-ToDoList
 
 1. Install MySQL Server
-> sudo apt install mysql-server
+- sudo apt install mysql-server
 
 2. Check MySQL Service
-> sudo systemctl status mysql
-> sudo systemctl start mysql.service
+- sudo systemctl status mysql
+- sudo systemctl start mysql.service
 
 3. Create MySQL Database
-> sudo mysql
-> CREATE DATABASE GoDB;
-> USE GoDB;
+- sudo mysql
+- CREATE DATABASE GoDB;
+- USE GoDB;
 
 4. Create MySQL Table
-> CREATE TABLE ToDoList (
+- CREATE TABLE ToDoList (
     ID INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
     Assignee VARCHAR(100) NOT NULL,
     Assigner VARCHAR(100) NOT NULL,
@@ -25,13 +25,13 @@
     );
 
 5. Download and Install Go
-> https://go.dev/doc/install
+- https://go.dev/doc/install
 
 6. Install Go MySQL Driver
-> go get -u github.com/go-sql-driver/mysql
+- go get -u github.com/go-sql-driver/mysql
 
 7. Edit main.go Based on Your MySQL Settings
-> func dbConn() (db *sql.DB) {
+- func dbConn() (db *sql.DB) {
     dbDriver := "mysql"
     dbUser := "root"
     dbPass := ""
